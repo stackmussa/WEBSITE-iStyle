@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>i Style Beauty Salon</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+            <img src="Untitled (Website).png" alt="i Style Beauty Parlor" class="logo-img">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#work">Our Work</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="https://api.whatsapp.com/send/?phone=923336727792&text&type=phone_number&app_absent=0" class="cta-button">Book Now</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="slideshow">
+            <div class="slide active" style="background-image: url('SLIDE1.jpg')"></div>
+            <div class="slide" style="background-image: url('SLIDE2.jpg')"></div>
+            <div class="slide" style="background-image: url('SLIDE3.jpg')"></div>
+            <div class="slide" style="background-image: url('SLIDE4.jpg')"></div>
+            <div class="slide" style="background-image: url('SLIDE5.jpg')"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1>Your Beauty, Our Passion</h1>
+                <p>Experience luxury and relaxation at our premier beauty salon</p>
+                <a href="#services" class="cta-button">Explore Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Us</h2>
+                <p>Discover our story and what makes us special</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Welcome to i Style Beauty Salon & Training Center</h3>
+                    <p>Founded in 1999 by the passionate and skilled Aalia Wajid, i Style has grown into a trusted name in beauty and professional training. </p>
+                    <p>With over two decades of experience and a dedicated team of 25 talented students, we’re committed to delivering top-tier beauty services and empowering the next generation of beauty professionals. At i Style, it's not just about looking good — it's about feeling confident, inspired, and transformed.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="number" data-count="26">0</span>
+                            <span>Years Experience</span>
+                        </div>
+                        <div class="stat">
+                            <span class="number" data-count="5000">0</span>
+                            <span>Happy Clients</span>
+                        </div>
+                        <div class="stat">
+                            <span class="number" data-count="25">0</span>
+                            <span>Expert Stylists</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <video autoplay muted loop>
+                        <source src="ABOUT_VIDEO.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Work Section -->
+    <section id="work" class="our-work">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Work</h2>
+                <p>See some of our recent transformations</p>
+            </div>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="HAIRSTYLE.jpg" alt="Hair styling">
+                    <div class="overlay">
+                        <h3>Hair Styling</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Makeup">
+                    <div class="overlay">
+                        <h3>Makeup</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Nail art">
+                    <div class="overlay">
+                        <h3>Nail Art</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Facial">
+                    <div class="overlay">
+                        <h3>Facials</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="view-more">
+                <button id="loadMore" class="cta-button">View More</button>
+            </div>
+            <div class="hidden-gallery" id="hiddenGallery">
+                <!-- Additional gallery items can be added here -->
+            </div>
+            
+        </div>
+        
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>Professional beauty treatments tailored for you</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cut"></i>
+                    </div>
+                    <h3>Hair Services</h3>
+                    <ul>
+                        <li>Haircuts & Styling</li>
+                        <li>Coloring & Highlights</li>
+                        <li>Extensions</li>
+                        <li>Keratin Treatments</li>
+                    </ul>
+                    <div class="space-for-addition"></div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3>Skin Care</h3>
+                    <ul>
+                        <li>Facials</li>
+                        <li>Chemical Peels</li>
+                        <li>Microdermabrasion</li>
+                        <li>Anti-Aging Treatments</li>
+                    </ul>
+                    <div class="space-for-addition"></div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Makeup</h3>
+                    <ul>
+                        <li>Bridal Makeup</li>
+                        <li>Special Occasion</li>
+                        <li>Airbrush Makeup</li>
+                        <li>Makeup Lessons</li>
+                    </ul>
+                    <div class="space-for-addition"></div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-hand-sparkles"></i>
+                    </div>
+                    <h3>Nail Care</h3>
+                    <ul>
+                        <li>Manicures & Pedicures</li>
+                        <li>Gel & Acrylic Nails</li>
+                        <li>Nail Art</li>
+                        <li>Nail Repair</li>
+                    </ul>
+                    <div class="space-for-addition"></div>
+                </div>
+            </div>
+            <div class="service-cta">
+                <p>Don't see what you're looking for? We offer many more services.</p>
+                <a href="https://drive.google.com/file/d/1khs3tmjbvDBnJykLZG5DgZjOcBcA0-uu/view?usp=sharing" target="_blank" class="cta-button">View Brochure</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <p>We'd love to hear from you</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <a href="https://maps.app.goo.gl/6opuAstLjQLvcZ2a9" target="_blank" class="address-link">
+                            <p>Bilal Colony, Toba Road, Jhang Saddar</p>
+                        </a>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+92 3336727792</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>iStyleBeautySalon@gmail.com</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <p>Monday - Sunday: 9AM - 9PM</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/iStyleBeautySalon.TC"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/_istylebeautysalon/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@_istylebeautysalon"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://api.whatsapp.com/send/?phone=923336727792&text&type=phone_number&app_absent=0"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Send Us a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" placeholder="Your Phone">
+                        </div>
+                        <div class="form-group">
+                            <select id="service" required>
+                                <option value="" disabled selected>Select a Service</option>
+                                <option value="hair">Hair Services</option>
+                                <option value="skin">Skin Care</option>
+                                <option value="makeup">Makeup</option>
+                                <option value="nails">Nail Care</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="cta-button">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>i Style Beauty Salon & Training Center</h3>
+                    <p>Your premier destination for beauty and relaxation. We're committed to providing exceptional services with a personal touch.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#work">Our Work</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Hair Services</a></li>
+                        <li><a href="#">Skin Care</a></li>
+                        <li><a href="#">Makeup</a></li>
+                        <li><a href="#">Nail Care</a></li>
+                        <li><a href="#">Special Packages</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Pin Location</h3>
+                    <p>Waiting For Your Presence Here.</p>
+                    <form class="newsletter-form">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d475.8610338292797!2d72.31887584411118!3d31.26339063410264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3923990077ec75e1%3A0xcf01afb465236e20!2sI%20Style%20Beauty%20Salon!5e1!3m2!1sen!2s!4v1753568573339!5m2!1sen!2s" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 i Style Beauty Salon & Training Center. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
